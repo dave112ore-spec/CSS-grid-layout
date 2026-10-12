@@ -1,0 +1,75 @@
+<htm>
+    <head>
+        <style>
+#firmdiv{
+    width:80vw;
+    height:700px;
+    
+      padding: 25px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(6,1fr);
+    grid-template-areas:"y1 y2 y2  y2 y2 y2"
+                        "y1 y3 y3 y7  y4 y5"
+                        "y1 y3 y3 y7  y4 y5"
+                        "y1 y3 y3 y8  y8 y5"
+                        "y1 y3 y3 y8  y8 y5"
+                        "y1 y6 y6  y6 y6 y6";
+    gap:15px;
+
+}
+#firmdiv>div{
+    width:100%;
+    height:100%;
+    border: none;
+    border: none;
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+    border-radius: 15px;
+
+
+}
+
+#firmdiv>div:hover{
+    background-color: rgb(238, 236, 238);
+    color: black;
+    font-size: 32px;
+    transform: scale(1.02);
+}
+.y1{grid-area: y1;}
+.y2{grid-area: y2;}
+.y3{grid-area: y3;}
+.y4{grid-area: y4;}
+.y5{grid-area: y5;}
+.y6{grid-area: y6;}
+.y7{grid-area: y7;}
+.y8{grid-area: y8;}
+
+h1{
+    margin: auto 40%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+
+
+}
+        </style>
+    </head>
+    <body>
+        <h1>CSS grid layout</h1>
+        <dive id="firmdiv">
+            <div class="y y1">side</div>
+             <div class="y y2">heading</div>
+              <div class="y y3">body</div>
+               <div class="y y4">image</div>
+                <div class="y y5">Menu</div>
+                 <div class="y y6">Title</div>
+                  <div class="y y7">paragraph</div>
+                  <div class="y y8">Sub title</div>
+                  
+        </dive>
+    </body>
+</htm>

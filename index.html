@@ -31,11 +31,15 @@
 
 }
 
-#firmdiv>div:hover{
+#firmdiv>div:hover,h1:hover{
     background-color: rgb(238, 236, 238);
     color: black;
     font-size: 32px;
     transform: scale(1.02);
+}
+
+h1:hover{
+color: rgb(9, 9, 9);
 }
 .y1{grid-area: y1;}
 .y2{grid-area: y2;}
@@ -49,7 +53,7 @@
 h1{
     margin: auto 40%;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 25px;
     border-radius: 15px;
@@ -61,14 +65,14 @@ h1{
     <body>
         <h1>CSS grid layout</h1>
         <dive id="firmdiv">
-            <div class="y y1">side</div>
+            <div class="y y1">Left Side</div>
              <div class="y y2">heading</div>
-              <div class="y y3">body</div>
-               <div class="y y4">image</div>
-                <div class="y y5">Menu</div>
-                 <div class="y y6">Title</div>
-                  <div class="y y7">paragraph</div>
-                  <div class="y y8">Sub title</div>
+              <div class="y y3">image 1</div>
+               <div class="y y4">image 3</div>
+                <div class="y y5">Right Side</div>
+                 <div class="y y6">Footer</div>
+                  <div class="y y7">image 2</div>
+                  <div class="y y8">image 4</div>
                   
         </dive>
     </body>
